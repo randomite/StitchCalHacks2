@@ -14,6 +14,7 @@
 		128177491BC8CE8400BA6694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128177471BC8CE8400BA6694 /* LaunchScreen.storyboard */; };
 		128177511BC8E2F900BA6694 /* login_background_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 128177501BC8E2F900BA6694 /* login_background_2.png */; settings = {ASSET_TAGS = (); }; };
 		128177531BC8E40900BA6694 /* Ravin Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 128177521BC8E40900BA6694 /* Ravin Logo.png */; settings = {ASSET_TAGS = (); }; };
+		128177551BC901CA00BA6694 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128177541BC901CA00BA6694 /* ExploreViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1281774A1BC8CE8400BA6694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		128177501BC8E2F900BA6694 /* login_background_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background_2.png; sourceTree = "<group>"; };
 		128177521BC8E40900BA6694 /* Ravin Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ravin Logo.png"; sourceTree = "<group>"; };
+		128177541BC901CA00BA6694 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				1281773E1BC8CE8400BA6694 /* AppDelegate.swift */,
 				128177401BC8CE8400BA6694 /* ViewController.swift */,
+				128177541BC901CA00BA6694 /* ExploreViewController.swift */,
 				128177421BC8CE8400BA6694 /* Main.storyboard */,
 				128177451BC8CE8400BA6694 /* Assets.xcassets */,
 				128177471BC8CE8400BA6694 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			files = (
 				128177411BC8CE8400BA6694 /* ViewController.swift in Sources */,
 				1281773F1BC8CE8400BA6694 /* AppDelegate.swift in Sources */,
+				128177551BC901CA00BA6694 /* ExploreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

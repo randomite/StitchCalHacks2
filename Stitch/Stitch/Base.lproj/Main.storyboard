@@ -50,6 +50,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfS-x7-k3T"/>
+                                            <segue destination="FaL-nT-dsf" kind="modal" id="IC3-BB-GO4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,6 +73,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234.5" y="336.5"/>
+        </scene>
+        <!--Explore View Controller-->
+        <scene sceneID="gHh-Rg-3sQ">
+            <objects>
+                <viewController id="FaL-nT-dsf" customClass="ExploreViewController" customModule="Stitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zvm-6b-aYb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLx-0d-DtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729.5" y="336.5"/>
         </scene>
     </scenes>
     <resources>
