@@ -11,8 +11,11 @@ import UIKit
 
 class ExploreViewController: UIViewController{
     
+    private var defaults:NSUserDefaults!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        defaults = NSUserDefaults.standardUserDefaults()
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,24 +24,34 @@ class ExploreViewController: UIViewController{
     }
     
     @IBAction func featuredButtonPressed(sender: AnyObject) {
-        
+        self.setVCvalue("featured")
     }
     @IBAction func shirtsButtonPressed(sender: AnyObject) {
-        
+        self.setVCvalue("shirts")
     }
     @IBAction func jacketsButtonPressed(sender: AnyObject) {
-        
+        self.setVCvalue("jackets")
     }
     @IBAction func shoesButtonPressed(sender: AnyObject) {
-        
+        self.setVCvalue("shoes")
     }
 
     @IBAction func hatsButtonPressed(sender: AnyObject) {
-        
+        self.setVCvalue("hats")
     }
 
     @IBAction func pantsButtonPressed(sender: AnyObject) {
+        self.setVCvalue("pants")
+    }
+    
+    private func setVCvalue(val:String){
+        defaults.setObject(val, forKey: "exploreVCval")
+        defaults.synchronize()
+        let exploreVCvalueObj = defaults.objectForKey("exploreVCval")
         
+        if let exploreVCvalueObj = exploreVCvalueObj{
+            print(exploreVCvalueObj)
+        }
     }
 
 }
