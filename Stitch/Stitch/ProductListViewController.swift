@@ -35,6 +35,8 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         self.imageNames.removeAtIndex(0)
         for(var i=0;i<5;i++){
             self.imageNames.insert("login_background_2.png", atIndex: i)
+            //self.imageNames.insert("http://192.168.1.3000/\(self.productTypeName)/\(String(i+1))", atIndex: i)
+            //print("http://192.168.1.3000/\(self.productTypeName)/\(String(i+1))")
         }
         
         
@@ -85,7 +87,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         self.defaults.setObject(sender.titleLabel?.text, forKey: "productImageSelected")
         defaults.synchronize()
         let obj = defaults.objectForKey("productImageSelected") as? String
-        print(obj)
+        //print(obj)
         
         //show the appropriate new VC
         

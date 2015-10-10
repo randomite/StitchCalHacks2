@@ -50,9 +50,9 @@ class ExploreViewController: UIViewController{
         defaults.synchronize()
         let exploreVCvalueObj = defaults.objectForKey("exploreVCval")
         
-        if let exploreVCvalueObj = exploreVCvalueObj{
-            print(exploreVCvalueObj)
-        }
+//        if let exploreVCvalueObj = exploreVCvalueObj{
+//            print(exploreVCvalueObj)
+//        }
     }
 
 }
