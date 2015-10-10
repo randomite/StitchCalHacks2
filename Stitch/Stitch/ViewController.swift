@@ -33,6 +33,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
+        self.scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: true)
+        
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
@@ -41,6 +43,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(textField: UITextField) {
         self.scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: true)
+//        textField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
     }
 
 }
