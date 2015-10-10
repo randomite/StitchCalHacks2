@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 
-class ProductListViewController: UIViewController{
+class ProductListViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet var titleLabel: UILabel!
     private var defaults:NSUserDefaults!
     private var productTypeName: String!
+    private var scrollerHeight:Int!
     
     @IBOutlet var scroller: UIScrollView!
+    
+    //array that stores image names from backend
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +26,13 @@ class ProductListViewController: UIViewController{
         self.productTypeName = defaults.objectForKey("exploreVCval") as? String
         self.titleLabel.text = productTypeName
         
-        self.createImage("login_background_2.png", rect: CGRect(x: 33, y: 60, width: 308, height: 308))
-        self.createImage("login_background_2.png", rect: CGRect(x: 33, y: 416, width: 308, height: 308))
-
+        self.scrollerHeight = 10*356 //instead of 10, have length of image name array
+        self.scroller.contentSize = CGSize(width: 375, height: self.scrollerHeight + 60)
         
+        for(var i=60;i<=self.scrollerHeight;i+=356){
+            self.createImage("login_background_2.png", rect: CGRect(x: 33, y: i, width: 308, height: 308))
+        }
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -43,6 +49,6 @@ class ProductListViewController: UIViewController{
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
         imageView.frame = rect
-        view.addSubview(imageView)
+        scroller.addSubview(imageView)
     }
 }
