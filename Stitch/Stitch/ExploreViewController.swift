@@ -19,5 +19,26 @@ class ExploreViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func featuredButtonPressed(sender: AnyObject) {
+        
+    }
+    @IBAction func shirtsButtonPressed(sender: AnyObject) {
+        
+    }
+    @IBAction func jacketsButtonPressed(sender: AnyObject) {
+        
+    }
+    @IBAction func shoesButtonPressed(sender: AnyObject) {
+        
+    }
+
+    @IBAction func hatsButtonPressed(sender: AnyObject) {
+        
+    }
+
+    @IBAction func pantsButtonPressed(sender: AnyObject) {
+        
+    }
 
 }
