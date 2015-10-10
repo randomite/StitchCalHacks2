@@ -17,20 +17,34 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate{
     
     @IBOutlet var scroller: UIScrollView!
     
-    //array that stores image names from backend
+    //initialize the array that stores image names from backend
+    private var imageNames: [String] = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //init all the user defaults stuff
         defaults = NSUserDefaults.standardUserDefaults()
         defaults.synchronize()
         self.productTypeName = defaults.objectForKey("exploreVCval") as? String
         self.titleLabel.text = productTypeName
         
-        self.scrollerHeight = 10*356 //instead of 10, have length of image name array
+        
+        //@TODO get all the image names from the backend and populate array over here
+        self.imageNames.removeAtIndex(0)
+        for(var i=0;i<3;i++){
+            self.imageNames.insert("login_background_2.png", atIndex: i)
+        }
+        
+        
+        //actually put the images into the scroll view
+        self.scrollerHeight = self.imageNames.count*356
         self.scroller.contentSize = CGSize(width: 375, height: self.scrollerHeight + 60)
         
-        for(var i=60;i<=self.scrollerHeight;i+=356){
-            self.createImage("login_background_2.png", rect: CGRect(x: 33, y: i, width: 308, height: 308))
+        var height:Int = 60;
+        for (_, value) in imageNames.enumerate() {
+            self.createImage(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
+            height += 356;
         }
 
     }
@@ -45,6 +59,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate{
     }
     
     private func createImage(imgName: String, rect:CGRect){
+        //@TODO create the image from a url
         let imageName = imgName
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
