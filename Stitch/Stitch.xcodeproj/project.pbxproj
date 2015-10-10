@@ -12,6 +12,8 @@
 		128177441BC8CE8400BA6694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128177421BC8CE8400BA6694 /* Main.storyboard */; };
 		128177461BC8CE8400BA6694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128177451BC8CE8400BA6694 /* Assets.xcassets */; };
 		128177491BC8CE8400BA6694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128177471BC8CE8400BA6694 /* LaunchScreen.storyboard */; };
+		128177511BC8E2F900BA6694 /* login_background_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 128177501BC8E2F900BA6694 /* login_background_2.png */; settings = {ASSET_TAGS = (); }; };
+		128177531BC8E40900BA6694 /* Ravin Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 128177521BC8E40900BA6694 /* Ravin Logo.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		128177451BC8CE8400BA6694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128177481BC8CE8400BA6694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1281774A1BC8CE8400BA6694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128177501BC8E2F900BA6694 /* login_background_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background_2.png; sourceTree = "<group>"; };
+		128177521BC8E40900BA6694 /* Ravin Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ravin Logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				128177451BC8CE8400BA6694 /* Assets.xcassets */,
 				128177471BC8CE8400BA6694 /* LaunchScreen.storyboard */,
 				1281774A1BC8CE8400BA6694 /* Info.plist */,
+				128177501BC8E2F900BA6694 /* login_background_2.png */,
+				128177521BC8E40900BA6694 /* Ravin Logo.png */,
 			);
 			path = Stitch;
 			sourceTree = "<group>";
@@ -121,8 +127,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128177531BC8E40900BA6694 /* Ravin Logo.png in Resources */,
 				128177491BC8CE8400BA6694 /* LaunchScreen.storyboard in Resources */,
 				128177461BC8CE8400BA6694 /* Assets.xcassets in Resources */,
+				128177511BC8E2F900BA6694 /* login_background_2.png in Resources */,
 				128177441BC8CE8400BA6694 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
