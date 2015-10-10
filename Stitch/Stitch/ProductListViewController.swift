@@ -82,7 +82,10 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func buttonClicked(sender:UIButton!){
-        print("\(sender.titleLabel?.text)")
+        self.defaults.setObject(sender.titleLabel?.text, forKey: "productImageSelected")
+        defaults.synchronize()
+        let obj = defaults.objectForKey("productImageSelected") as? String
+        print(obj)
     }
     
 }
