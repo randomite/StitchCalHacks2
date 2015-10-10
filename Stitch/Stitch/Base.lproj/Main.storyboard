@@ -97,6 +97,7 @@
                                         </state>
                                         <connections>
                                             <action selector="shoesButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="mEA-UR-onV"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" id="EWq-wK-lNx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Am8-1b-eUU">
@@ -110,6 +111,7 @@
                                         </state>
                                         <connections>
                                             <action selector="hatsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="DmD-nd-Xpp"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" id="9Xs-Ea-WkB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jst-wv-xd1">
@@ -123,6 +125,7 @@
                                         </state>
                                         <connections>
                                             <action selector="pantsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="hiS-oC-cag"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" id="bfI-NU-c27"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SJS-Gm-LqZ">
@@ -136,6 +139,7 @@
                                         </state>
                                         <connections>
                                             <action selector="shirtsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="GfW-DA-bY3"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" id="Yqm-zf-5xT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16Q-JB-Wdd">
@@ -149,6 +153,7 @@
                                         </state>
                                         <connections>
                                             <action selector="jacketsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="ZHC-XI-2fe"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" id="DiQ-aC-Soq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SSC-Zo-cS1">
@@ -162,6 +167,7 @@
                                         </state>
                                         <connections>
                                             <action selector="featuredButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="Itj-3N-DYn"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" id="6yM-sF-mjL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -177,9 +183,28 @@
             </objects>
             <point key="canvasLocation" x="729.5" y="336.5"/>
         </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="UeY-Lu-sTD">
+            <objects>
+                <viewController id="tWR-pn-XbD" customClass="ProductListViewController" customModule="Stitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iF8-aR-6I6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8oG-cf-YKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180.5" y="336.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Ravin Logo.png" width="810" height="818"/>
         <image name="login_background_2.png" width="540" height="960"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bfI-NU-c27"/>
+    </inferredMetricsTieBreakers>
 </document>
