@@ -10,10 +10,20 @@ import Foundation
 import UIKit
 
 class ProductViewController: UIViewController {
+    private var defaults:NSUserDefaults!
+    private var typeOfProduct:String!
+    @IBOutlet var productLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //defualts synchro
+        defaults = NSUserDefaults.standardUserDefaults()
+        defaults.synchronize()
+        self.typeOfProduct = defaults.objectForKey("productImageSelected") as? String
+        self.productLabel.text = typeOfProduct
+        
         
     }
     

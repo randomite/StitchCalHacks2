@@ -86,6 +86,25 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         defaults.synchronize()
         let obj = defaults.objectForKey("productImageSelected") as? String
         print(obj)
+        
+        //show the appropriate new VC
+        
+        /*
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+        UIViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"loginVC"];
+        loginVC.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self.window.rootViewController presentModalViewController:loginVC animated:YES];
+        */
+        
+//        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let productVC:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ProductViewController")
+//        productVC.modalPresentationStyle = UIModalPresentationStyle.FullScreen
+//        self.presentViewController(productVC, animated: true, completion: nil)
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("ProductViewController") 
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
 }
