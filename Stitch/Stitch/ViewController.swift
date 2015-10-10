@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var scrollView: UIScrollView!
+    private var genericTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +35,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
         self.scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: true)
-        
+        self.textFieldShouldReturn(genericTextField)
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
         self.scrollView.setContentOffset(CGPointMake(0.0, 200.0), animated: true)
+        self.genericTextField = textField
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
