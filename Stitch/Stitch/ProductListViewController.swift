@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ProductListViewController: UIViewController, UIScrollViewDelegate{
+class ProductListViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var titleLabel: UILabel!
     private var defaults:NSUserDefaults!
     private var productTypeName: String!
@@ -18,6 +18,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet var scroller: UIScrollView!
     
     //initialize the array that stores image names from backend
+    //make this into a hash map, with the image name, and position in the VC
     private var imageNames: [String] = [""]
     
     override func viewDidLoad() {
@@ -32,7 +33,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate{
         
         //@TODO get all the image names from the backend and populate array over here
         self.imageNames.removeAtIndex(0)
-        for(var i=0;i<3;i++){
+        for(var i=0;i<5;i++){
             self.imageNames.insert("login_background_2.png", atIndex: i)
         }
         
@@ -44,6 +45,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate{
         var height:Int = 60;
         for (_, value) in imageNames.enumerate() {
             self.createImage(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
+            self.createButton(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
             height += 356;
         }
 
@@ -59,11 +61,28 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate{
     }
     
     private func createImage(imgName: String, rect:CGRect){
-        //@TODO create the image from a url
+        
         let imageName = imgName
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
         imageView.frame = rect
+        //imageView.userInteractionEnabled = true
         scroller.addSubview(imageView)
     }
+    
+    private func createButton(backGroundImageName: String, rect:CGRect){
+        let button   = UIButton(type: UIButtonType.System) as UIButton
+        button.frame = rect
+        //button.backgroundColor = UIColor.greenColor()
+        //button.setImage(UIImage(named: backGroundImageName), forState: UIControlState.Normal)
+        button.setTitle(backGroundImageName, forState: UIControlState.Normal)
+        button.titleLabel?.removeFromSuperview()
+        button.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.scroller.addSubview(button)
+    }
+    
+    func buttonClicked(sender:UIButton!){
+        print("\(sender.titleLabel?.text)")
+    }
+    
 }
