@@ -16,6 +16,7 @@ class ExploreViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         defaults = NSUserDefaults.standardUserDefaults()
+        defaults.synchronize()
     }
     
     override func didReceiveMemoryWarning() {
