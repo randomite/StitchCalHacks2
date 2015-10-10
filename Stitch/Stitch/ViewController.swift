@@ -41,8 +41,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        self.scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: true)
-        self.textFieldShouldReturn(genericTextField)
+//        self.scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: true)
+//        self.textFieldShouldReturn(genericTextField)
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {

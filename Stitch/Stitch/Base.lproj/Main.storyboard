@@ -96,7 +96,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="hatsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="IT8-a0-7L8"/>
                                             <action selector="shoesButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="mEA-UR-onV"/>
                                         </connections>
                                     </button>
@@ -110,7 +109,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="accessoriesButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="6BZ-7J-h0F"/>
                                             <action selector="hatsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="DmD-nd-Xpp"/>
                                         </connections>
                                     </button>
@@ -174,9 +172,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="jacketsButtonPressed" destination="16Q-JB-Wdd" id="1k3-Zs-CaC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLx-0d-DtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
