@@ -37,8 +37,12 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
             //self.imageNames.insert("login_background_2.png", atIndex: i)
             
             //self.imageNames.insert("http://192.168.1.3000/\(self.productTypeName)/\(String(i+1))", atIndex: i)
-            self.imageNames.insert("http://104.236.168.5/assets/shirts/shirt1.jpg", atIndex: i)
-            //print("http://192.168.1.3000/\(self.productTypeName)/\(String(i+1))")
+            self.imageNames.insert("http://104.236.168.5/assets/\(self.productTypeName)/\(self.productTypeName)\(String(i+1)).jpg", atIndex: i)
+            
+            
+            //self.imageNames.insert("http://104.236.168.5/assets/\(self.productTypeName)/shirt\(String(i+1)).jpg", atIndex: i)
+            print("http://104.236.168.5/assets/\(self.productTypeName)/\(self.productTypeName)\(String(i+1)).jpg")
+            
         }
         
         
