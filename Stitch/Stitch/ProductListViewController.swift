@@ -34,8 +34,10 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         //@TODO get all the image names from the backend and populate array over here
         self.imageNames.removeAtIndex(0)
         for(var i=0;i<5;i++){
-            self.imageNames.insert("login_background_2.png", atIndex: i)
+            //self.imageNames.insert("login_background_2.png", atIndex: i)
+            
             //self.imageNames.insert("http://192.168.1.3000/\(self.productTypeName)/\(String(i+1))", atIndex: i)
+            self.imageNames.insert("http://104.236.168.5/assets/shirts/shirt1.jpg", atIndex: i)
             //print("http://192.168.1.3000/\(self.productTypeName)/\(String(i+1))")
         }
         
@@ -46,7 +48,8 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         
         var height:Int = 60;
         for (_, value) in imageNames.enumerate() {
-            self.createImage(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
+            //self.createImage(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
+            self.createImageFromURL(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
             self.createButton(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
             height += 356;
         }
@@ -69,6 +72,27 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         let imageView = UIImageView(image: image!)
         imageView.frame = rect
         //imageView.userInteractionEnabled = true
+        scroller.addSubview(imageView)
+    }
+    
+    private func createImageFromURL(imgName:String, rect:CGRect){
+//        let imageName = imgName
+//        let image = UIImage(named: imageName)
+//        let imageView = UIImageView(image: image!)
+//        imageView.frame = rect
+//        //imageView.userInteractionEnabled = true
+//        scroller.addSubview(imageView)
+        
+        let imageView:UIImageView = UIImageView()
+        
+        if let url = NSURL(string: imgName) {
+            if let data = NSData(contentsOfURL: url){
+                imageView.contentMode = UIViewContentMode.ScaleAspectFit
+                imageView.image = UIImage(data: data)
+            }
+        }
+        
+        imageView.frame = rect
         scroller.addSubview(imageView)
     }
     
