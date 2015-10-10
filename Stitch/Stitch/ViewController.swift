@@ -24,12 +24,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.scrollView.flashScrollIndicators()
         self.userNameTextField.delegate = self
         self.passwordTextField.delegate = self
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
@@ -43,7 +46,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(textField: UITextField) {
         self.scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: true)
-//        textField.resignFirstResponder()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
