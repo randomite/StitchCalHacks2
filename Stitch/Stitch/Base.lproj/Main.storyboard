@@ -170,6 +170,11 @@
                                             <segue destination="tWR-pn-XbD" kind="modal" id="6yM-sF-mjL"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title Nav Bar.png" id="dTA-bJ-TSj">
+                                        <rect key="frame" x="-16" y="-13" width="402" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                             </scrollView>
@@ -181,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLx-0d-DtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729.5" y="336.5"/>
+            <point key="canvasLocation" x="884.5" y="336.5"/>
         </scene>
         <!--Product List View Controller-->
         <scene sceneID="UeY-Lu-sTD">
@@ -195,14 +200,11 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bSh-Og-G33">
-                                        <rect key="frame" x="127" y="29" width="121" height="21"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title Nav Bar.png" id="n0U-3c-HxF">
+                                        <rect key="frame" x="-14" y="-27" width="402" height="98"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                             </scrollView>
@@ -213,12 +215,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="scroller" destination="CiK-dB-NGu" id="lZU-tD-JEf"/>
-                        <outlet property="titleLabel" destination="bSh-Og-G33" id="Fwn-fC-uoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oG-cf-YKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180.5" y="336.5"/>
+            <point key="canvasLocation" x="1268.5" y="336.5"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="QmV-Os-OhE">
@@ -229,17 +230,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7W9-Tl-SlC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="10" width="375" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uLo-22-7ZQ">
-                                        <rect key="frame" x="59" y="33" width="257" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FFH-1p-S3X">
                                         <rect key="frame" x="21" y="62" width="333" height="333"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -268,6 +261,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title Nav Bar.png" id="78N-hi-Ee4">
+                                        <rect key="frame" x="-14" y="-17" width="402" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                             </scrollView>
@@ -275,12 +273,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="leftSmallImageVIew" destination="O8s-Mu-C8b" id="zma-s2-clA"/>
                         <outlet property="mainImageView" destination="FFH-1p-S3X" id="Y4V-nl-HdE"/>
                         <outlet property="middleSmallImageView" destination="kt8-Ja-G10" id="S9W-I6-Iwr"/>
-                        <outlet property="productLabel" destination="uLo-22-7ZQ" id="lk0-rA-Tbp"/>
                         <outlet property="rightSmallImageView" destination="G4Q-3V-4Wv" id="yeM-BY-WkV"/>
                     </connections>
                 </viewController>
@@ -291,6 +291,7 @@
     </scenes>
     <resources>
         <image name="Ravin Logo.png" width="810" height="818"/>
+        <image name="Title Nav Bar.png" width="401" height="88"/>
         <image name="login_background_2.png" width="540" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>

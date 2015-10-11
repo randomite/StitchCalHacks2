@@ -28,7 +28,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         defaults = NSUserDefaults.standardUserDefaults()
         defaults.synchronize()
         self.productTypeName = defaults.objectForKey("exploreVCval") as? String
-        self.titleLabel.text = productTypeName
+        //self.titleLabel.text = productTypeName
         
         
         //@TODO get all the image names from the backend and populate array over here
