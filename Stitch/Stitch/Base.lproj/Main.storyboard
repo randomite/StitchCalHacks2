@@ -50,7 +50,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfS-x7-k3T"/>
-                                            <segue destination="FaL-nT-dsf" kind="modal" id="IC3-BB-GO4"/>
+                                            <segue destination="FaL-nT-dsf" kind="modal" modalTransitionStyle="flipHorizontal" id="IC3-BB-GO4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -97,7 +97,7 @@
                                         </state>
                                         <connections>
                                             <action selector="shoesButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="mEA-UR-onV"/>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="EWq-wK-lNx"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="flipHorizontal" id="EWq-wK-lNx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Am8-1b-eUU">
@@ -111,7 +111,7 @@
                                         </state>
                                         <connections>
                                             <action selector="hatsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="DmD-nd-Xpp"/>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="9Xs-Ea-WkB"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="flipHorizontal" id="9Xs-Ea-WkB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jst-wv-xd1">
@@ -125,7 +125,7 @@
                                         </state>
                                         <connections>
                                             <action selector="pantsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="hiS-oC-cag"/>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="bfI-NU-c27"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="flipHorizontal" id="bfI-NU-c27"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SJS-Gm-LqZ">
@@ -139,7 +139,7 @@
                                         </state>
                                         <connections>
                                             <action selector="shirtsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="GfW-DA-bY3"/>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="Yqm-zf-5xT"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="flipHorizontal" id="Yqm-zf-5xT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16Q-JB-Wdd">
@@ -153,7 +153,7 @@
                                         </state>
                                         <connections>
                                             <action selector="jacketsButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="ZHC-XI-2fe"/>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="DiQ-aC-Soq"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="flipHorizontal" id="DiQ-aC-Soq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SSC-Zo-cS1">
@@ -167,7 +167,7 @@
                                         </state>
                                         <connections>
                                             <action selector="featuredButtonPressed:" destination="FaL-nT-dsf" eventType="touchUpInside" id="Itj-3N-DYn"/>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="6yM-sF-mjL"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="flipHorizontal" id="6yM-sF-mjL"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title Nav Bar.png" id="dTA-bJ-TSj">
@@ -195,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLx-0d-DtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884.5" y="336.5"/>
+            <point key="canvasLocation" x="872.5" y="336.5"/>
         </scene>
         <!--Product List View Controller-->
         <scene sceneID="UeY-Lu-sTD">
@@ -220,7 +220,7 @@
                                         <animations/>
                                         <state key="normal" image="back arrow.png"/>
                                         <connections>
-                                            <segue destination="FaL-nT-dsf" kind="modal" id="RLt-Ay-1Kw"/>
+                                            <segue destination="FaL-nT-dsf" kind="modal" modalTransitionStyle="partialCurl" id="RLt-Ay-1Kw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oG-cf-YKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268.5" y="336.5"/>
+            <point key="canvasLocation" x="1517.5" y="336.5"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="QmV-Os-OhE">
@@ -270,7 +270,7 @@
                                         <rect key="frame" x="21" y="539" width="333" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -290,7 +290,7 @@
                                         <animations/>
                                         <state key="normal" image="back arrow.png"/>
                                         <connections>
-                                            <segue destination="tWR-pn-XbD" kind="modal" id="R9i-kb-KME"/>
+                                            <segue destination="tWR-pn-XbD" kind="modal" modalTransitionStyle="partialCurl" id="R9i-kb-KME"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -305,6 +305,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="descriptionTextView" destination="d9z-mZ-z8B" id="ryP-mZ-BwW"/>
                         <outlet property="leftSmallImageVIew" destination="O8s-Mu-C8b" id="zma-s2-clA"/>
                         <outlet property="mainImageView" destination="FFH-1p-S3X" id="Y4V-nl-HdE"/>
                         <outlet property="middleSmallImageView" destination="kt8-Ja-G10" id="S9W-I6-Iwr"/>
@@ -313,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdU-7K-yYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648.5" y="336.5"/>
+            <point key="canvasLocation" x="2119.5" y="327.5"/>
         </scene>
     </scenes>
     <resources>
