@@ -115,7 +115,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         self.defaults.setObject(sender.titleLabel?.text, forKey: "productImageSelected")
         defaults.synchronize()
         let obj = defaults.objectForKey("productImageSelected") as? String
-        //print(obj)
+        print(obj)
         
         //show the appropriate new VC
         

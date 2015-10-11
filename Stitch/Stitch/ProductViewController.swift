@@ -13,6 +13,10 @@ class ProductViewController: UIViewController {
     private var defaults:NSUserDefaults!
     private var typeOfProduct:String!
     @IBOutlet var productLabel: UILabel!
+    @IBOutlet var mainImageView: UIImageView!
+    @IBOutlet var leftSmallImageVIew: UIImageView!
+    @IBOutlet var middleSmallImageView: UIImageView!
+    @IBOutlet var rightSmallImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
