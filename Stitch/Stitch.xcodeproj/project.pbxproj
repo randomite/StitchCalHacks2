@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		125081E21BC9EC900044FB21 /* Title Nav Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 125081E11BC9EC900044FB21 /* Title Nav Bar.png */; settings = {ASSET_TAGS = (); }; };
+		125081E41BC9F22E0044FB21 /* back arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 125081E31BC9F22E0044FB21 /* back arrow.png */; settings = {ASSET_TAGS = (); }; };
 		126CA43D1BC9218C00D051B7 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126CA43C1BC9218C00D051B7 /* ProductListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		126CA45D1BC9840B00D051B7 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126CA45C1BC9840B00D051B7 /* ProductViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1281773F1BC8CE8400BA6694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281773E1BC8CE8400BA6694 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		125081E11BC9EC900044FB21 /* Title Nav Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Title Nav Bar.png"; sourceTree = "<group>"; };
+		125081E31BC9F22E0044FB21 /* back arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back arrow.png"; sourceTree = "<group>"; };
 		126CA43C1BC9218C00D051B7 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		126CA45C1BC9840B00D051B7 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		1281773B1BC8CE8300BA6694 /* Stitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				128177501BC8E2F900BA6694 /* login_background_2.png */,
 				128177521BC8E40900BA6694 /* Ravin Logo.png */,
 				125081E11BC9EC900044FB21 /* Title Nav Bar.png */,
+				125081E31BC9F22E0044FB21 /* back arrow.png */,
 			);
 			path = Stitch;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				125081E21BC9EC900044FB21 /* Title Nav Bar.png in Resources */,
 				128177531BC8E40900BA6694 /* Ravin Logo.png in Resources */,
 				128177491BC8CE8400BA6694 /* LaunchScreen.storyboard in Resources */,
+				125081E41BC9F22E0044FB21 /* back arrow.png in Resources */,
 				128177461BC8CE8400BA6694 /* Assets.xcassets in Resources */,
 				128177511BC8E2F900BA6694 /* login_background_2.png in Resources */,
 				128177441BC8CE8400BA6694 /* Main.storyboard in Resources */,

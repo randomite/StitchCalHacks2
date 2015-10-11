@@ -50,7 +50,7 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
         self.scrollerHeight = self.imageNames.count*356
         self.scroller.contentSize = CGSize(width: 375, height: self.scrollerHeight + 60)
         
-        var height:Int = 60;
+        var height:Int = 80;
         for (_, value) in imageNames.enumerate() {
             //self.createImage(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
             self.createImageFromURL(value, rect: CGRect(x: 33, y: height, width: 308, height: 308))
