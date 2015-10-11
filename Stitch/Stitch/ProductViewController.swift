@@ -62,17 +62,17 @@ class ProductViewController: UIViewController {
         }
         
         if(urlOfProduct.containsString("featured")){
-            self.descriptionTextView.text = "these are featured"
+            self.descriptionTextView.text = "Top Trends in Modern Day Fashion"
         }else if(urlOfProduct.containsString("shirts")){
-            self.descriptionTextView.text = "these are shirts"
+            self.descriptionTextView.text = "Oxfords to Tees"
         }else if(urlOfProduct.containsString("jackets")){
-            self.descriptionTextView.text = "these are jackets"
+            self.descriptionTextView.text = "Functionality with Style"
         }else if(urlOfProduct.containsString("shoes")){
-            self.descriptionTextView.text = "these are shoes"
+            self.descriptionTextView.text = "Formal to Functional"
         }else if(urlOfProduct.containsString("hats")){
-            self.descriptionTextView.text = "these are hats"
+            self.descriptionTextView.text = "Grandpa's Top Hat to A Rapper's Snapback"
         }else if(urlOfProduct.containsString("pants")){
-            self.descriptionTextView.text = "these are pants"
+            self.descriptionTextView.text = "Dress to Impress for Any Occasion"
         }
     }
     
