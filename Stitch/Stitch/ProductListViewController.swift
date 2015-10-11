@@ -62,6 +62,10 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
     }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
     
     override func didReceiveMemoryWarning() {

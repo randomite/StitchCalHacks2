@@ -24,6 +24,10 @@ class ExploreViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     @IBAction func featuredButtonPressed(sender: AnyObject) {
         self.setVCvalue("featured")
     }
