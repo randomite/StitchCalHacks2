@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.passwordTextField.secureTextEntry = true;
         self.scrollView.userInteractionEnabled = true;
         self.scrollView.contentSize = CGSizeMake(375, 400)
         self.scrollView.flashScrollIndicators()
