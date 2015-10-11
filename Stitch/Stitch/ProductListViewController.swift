@@ -118,6 +118,14 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
     func buttonClicked(sender:UIButton!){
         self.defaults.setObject(sender.titleLabel?.text, forKey: "productURL")
         defaults.synchronize()
+        self.defaults.setObject(sender.titleLabel?.text, forKey: "productURL")
+        defaults.synchronize()
+        self.defaults.setObject(sender.titleLabel?.text, forKey: "productURL")
+        defaults.synchronize()
+        self.defaults.setObject(sender.titleLabel?.text, forKey: "productURL")
+        defaults.synchronize()
+        defaults.synchronize()
+        defaults.synchronize()
         let obj = defaults.objectForKey("productURL") as? String
         print(obj)
         
