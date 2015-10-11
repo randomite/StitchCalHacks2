@@ -11,7 +11,9 @@ import UIKit
 
 class ProductViewController: UIViewController {
     private var defaults:NSUserDefaults!
-    private var typeOfProduct:String!
+    private var urlOfProduct:String!
+    private var indexOfProduct:Int!
+    
     @IBOutlet var productLabel: UILabel!
     @IBOutlet var mainImageView: UIImageView!
     @IBOutlet var leftSmallImageVIew: UIImageView!
@@ -25,10 +27,38 @@ class ProductViewController: UIViewController {
         //defualts synchro
         defaults = NSUserDefaults.standardUserDefaults()
         defaults.synchronize()
-        self.typeOfProduct = defaults.objectForKey("productImageSelected") as? String
-        self.productLabel.text = typeOfProduct
+        self.urlOfProduct = defaults.objectForKey("productURL") as? String
         
         
+        if let url = NSURL(string: self.urlOfProduct) {
+            if let data = NSData(contentsOfURL: url){
+                mainImageView.contentMode = UIViewContentMode.ScaleAspectFit
+                mainImageView.image = UIImage(data: data)
+            }
+        }
+        
+        if let url = NSURL(string: self.urlOfProduct) {
+            if let data = NSData(contentsOfURL: url){
+                leftSmallImageVIew.contentMode = UIViewContentMode.ScaleAspectFit
+                leftSmallImageVIew.image = UIImage(data: data)
+                leftSmallImageVIew.transform = CGAffineTransformMakeRotation(0.50);
+            }
+        }
+        
+        if let url = NSURL(string: self.urlOfProduct) {
+            if let data = NSData(contentsOfURL: url){
+                middleSmallImageView.contentMode = UIViewContentMode.ScaleAspectFit
+                middleSmallImageView.image = UIImage(data: data)
+            }
+        }
+        
+        if let url = NSURL(string: self.urlOfProduct) {
+            if let data = NSData(contentsOfURL: url){
+                rightSmallImageView.contentMode = UIViewContentMode.ScaleAspectFit
+                rightSmallImageView.image = UIImage(data: data)
+                rightSmallImageView.transform = CGAffineTransformMakeRotation(-0.50);
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

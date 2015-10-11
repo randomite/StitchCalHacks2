@@ -112,9 +112,9 @@ class ProductListViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func buttonClicked(sender:UIButton!){
-        self.defaults.setObject(sender.titleLabel?.text, forKey: "productImageSelected")
+        self.defaults.setObject(sender.titleLabel?.text, forKey: "productURL")
         defaults.synchronize()
-        let obj = defaults.objectForKey("productImageSelected") as? String
+        let obj = defaults.objectForKey("productURL") as? String
         print(obj)
         
         //show the appropriate new VC
